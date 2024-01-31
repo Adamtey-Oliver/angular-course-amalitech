@@ -11,4 +11,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Angular Core Deep Dive';
+
+  onKeyUp (newTitle:string) {
+    this.title = newTitle;
+  }
 }
