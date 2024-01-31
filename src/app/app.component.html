@@ -45,5 +45,5 @@
   </defs>
 </svg>
 
-<input class="demo" [value]="title">
+<input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="title" #titleInput>
 <router-outlet></router-outlet>
